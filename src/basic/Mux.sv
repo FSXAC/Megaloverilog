@@ -51,7 +51,7 @@ endmodule
 // One hot muxes
 module Mux8OH(
 	a0, a1, a2, a3, a4, a5, a6, a7,
-	select, b
+	select, out
 );
 	parameter k = 1;
 
@@ -59,7 +59,7 @@ module Mux8OH(
 	input [7:0] select;
 	output [k - 1:0] out;
 
-	assign b =
+	assign out =
 	({k{select[0]}} & a0) |
 	({k{select[1]}} & a1) |
 	({k{select[2]}} & a2) |
