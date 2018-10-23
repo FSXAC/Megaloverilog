@@ -1,3 +1,5 @@
+`include "basic/Register.sv"
+
 // Register file is a collection of registers
 // Handles incoming write and address signals
 
